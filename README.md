@@ -34,7 +34,7 @@ git clone https://github.com/your-repo/ai-prompt-studio.git
 On macOS or Linux:
 
 ```bash
-open Aipromptstudio.html
+open Ai_Prompt_Studio.html
 ```
 
 Or simply drag and drop `Ai_Prompt_Studio.html` into your preferred browser (Chrome, Firefox, Edge, Safari, etc.).
@@ -43,7 +43,7 @@ Or simply drag and drop `Ai_Prompt_Studio.html` into your preferred browser (Chr
 
 ### 3. Set Up Your API Keys
 
-Open `Aipromptstudio.html` in a code editor (VSCode, Sublime Text, Notepad++, etc.) and locate the following lines:
+Open `Ai_Prompt_Studio.html` in a code editor (VSCode, Sublime Text, Notepad++, etc.) and locate the following lines:
 
 ```js
 const OPENAI_API_KEY = "INSERT_YOUR_OPENAI_API_HERE";
