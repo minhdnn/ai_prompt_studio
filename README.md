@@ -1,69 +1,75 @@
 
 # 🧠 AI Prompt Studio (Web Version)
 
-**AI Prompt Studio** là một ứng dụng web giao diện đơn, giúp bạn tạo, tối ưu hóa và chỉnh sửa prompt để tương tác với các mô hình AI hiện đại như **OpenAI GPT-4o** và **Google Gemini 1.5 Flash**. Ứng dụng hỗ trợ markdown, LaTeX, image input và tùy chỉnh nhiều loại ngữ cảnh sử dụng.
+**AI Prompt Studio** is a single-page web application designed to help you create, refine, and optimize prompts for interacting with cutting-edge AI models like **OpenAI GPT-4o** and **Google Gemini 1.5 Flash**. The app supports markdown, LaTeX, image input, and various customization options for different use cases.
 
 ---
 
-## 🚀 Tính năng nổi bật
+## 🚀 Key Features
 
-- 🧠 Tương thích GPT-4o và Gemini 1.5
-- 📌 Giao diện 3 cột trực quan: Input → Task → Output
-- ✍️ Tùy chọn chi tiết: tone, vai trò, ngành nghề, kênh giao tiếp, ngôn ngữ, độ dài, v.v.
-- 📎 Hỗ trợ đính kèm ảnh (image prompt) để phân tích hoặc mô tả ảnh
-- 🧩 Quản lý biến tùy chỉnh (custom context variables)
-- 💾 Lưu cấu hình người dùng (localStorage)
-- 🔈 Đọc to kết quả đầu ra (text-to-speech)
-- 🌙 Hỗ trợ Dark Mode
-- 📄 Hướng dẫn nhanh và ví dụ prompt mẫu
+- 🧠 Compatible with OpenAI GPT-4o and Google Gemini 1.5
+- 📌 Clean and intuitive 3-column layout: Input → Task → Output
+- ✍️ Extensive customization: tone, role, industry, communication channel, language, length, and more
+- 📎 Image prompt support for analysis and description
+- 🧩 Manage custom context variables
+- 💾 Save user settings via localStorage
+- 🔈 Built-in text-to-speech output
+- 🌙 Dark mode support
+- 📄 Quick start guide and sample prompts included
 
 ---
 
-## 🛠️ Cài đặt & Sử dụng
+## 🛠️ Installation & Usage
 
-### 1. Clone hoặc tải project
+### 1. Clone or Download the Project
 
-
-### 2. Mở file HTML trong trình duyệt
+Download the repository or clone it using Git:
 
 ```bash
-# Cách 1: Mở trực tiếp trên macOS hoặc Linux
+git clone https://github.com/your-repo/ai-prompt-studio.git
+```
+
+### 2. Open the HTML File in a Browser
+
+On macOS or Linux:
+
+```bash
 open Aipromptstudio.html
 ```
 
-Hoặc kéo file `Aipromptstudio.html` vào trình duyệt bất kỳ (Chrome, Edge, Firefox, Safari...).
+Or simply drag and drop `Aipromptstudio.html` into your preferred browser (Chrome, Firefox, Edge, Safari, etc.).
 
 ---
 
-### 3. Thiết lập API Key
+### 3. Set Up Your API Keys
 
-Mở file `Aipromptstudio.html` bằng trình soạn thảo mã nguồn (VSCode, Sublime, Notepad++...), và tìm đến đoạn:
+Open `Aipromptstudio.html` in a code editor (VSCode, Sublime Text, Notepad++, etc.) and locate the following lines:
 
 ```js
 const OPENAI_API_KEY = "INSERT_YOUR_OPENAI_API_HERE";
 const GEMINI_API_KEY = "INSERT_YOUR_GEMINI_API_HERE";
 ```
 
-Thay thế bằng khóa API của bạn:
+Replace the placeholders with your actual API keys:
 
 - 🔑 OpenAI API Key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 - 🔑 Google Gemini API Key: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
-> ⚠️ **Cảnh báo:** Không commit khóa API lên GitHub công khai. Hãy sử dụng biến môi trường hoặc backend để bảo mật nếu deploy online.
+> ⚠️ **Warning:** Never upload your API keys to public repositories. Use environment variables or a secure backend if deploying online.
 
 ---
 
-## 💡 Ví dụ sử dụng
+## 💡 Example Use Cases
 
-### 📌 Prompt cải thiện văn phong
+### 📌 Improve Writing Style
 
 - **Input:** `The report is good. I need more time.`
 - **Task:** Improve Text  
 - **Tone:** Professional  
-- **Recipient:** Superior/Manager  
-- **Output:** Một email chuyên nghiệp đề nghị thêm thời gian với tiêu đề và nội dung rõ ràng.
+- **Recipient:** Manager  
+- **Output:** A professionally worded email requesting an extension, with a clear subject and body.
 
-### 🌐 Prompt dịch văn bản
+### 🌐 Translate Text
 
 - **Input:** `Hôm nay trời đẹp quá!`  
 - **Task:** Translate Text  
@@ -72,35 +78,33 @@ Thay thế bằng khóa API của bạn:
 
 ---
 
-## 📋 Các task được hỗ trợ
+## 📋 Supported Tasks
 
-- Improve Text
-- Rewrite Text
-- Change Tone
-- Correct Grammar (minimal changes)
-- Summarize
-- Expand on Text/Idea
-- Translate
-- Dictionary
-- English Learning
+- Improve Text  
+- Rewrite Text  
+- Change Tone  
+- Correct Grammar (Minimal Changes)  
+- Summarize  
+- Expand Text or Ideas  
+- Translate  
+- Dictionary Lookup  
+- English Learning  
 - Free Prompt
 
 ---
 
-## 📦 Công nghệ sử dụng
+## 📦 Technologies Used
 
-- [TailwindCSS](https://cdn.tailwindcss.com)
-- [Font Awesome](https://cdnjs.com)
-- [marked.js](https://cdn.jsdelivr.net/npm/marked)
+- [Tailwind CSS](https://cdn.tailwindcss.com)  
+- [Font Awesome](https://cdnjs.com)  
+- [marked.js](https://cdn.jsdelivr.net/npm/marked)  
 - [MathJax](https://cdn.jsdelivr.net/npm/mathjax)
 
-Tất cả được import trực tiếp từ CDN — không cần cài đặt backend hay thư viện ngoài.
+All dependencies are loaded via CDN—no backend or additional installation required.
 
 ---
 
-## 📄 Giấy phép
+## 📄 License
 
-Phát hành theo [MIT License](LICENSE).
-
-Phát triển bởi **Minh Do - 2025**
-
+Released under the [MIT License](LICENSE)  
+Developed by **Minh Do – 2025**
