@@ -1,77 +1,106 @@
-🧠 AI Prompt Studio (OpenAI/Gemini Web App)
-A modern, responsive, and user-friendly web application that helps users generate high-quality AI outputs by customizing context, tone, role, language, and more — powered by OpenAI GPT-4o and Google Gemini 1.5 Flash.
 
-✨ Features
-🔁 Supports both OpenAI and Google Gemini APIs
+# 🧠 AI Prompt Studio (Web Version)
 
-📚 Smart contextual configuration: tone, channel, role, industry, etc.
+**AI Prompt Studio** là một ứng dụng web giao diện đơn, giúp bạn tạo, tối ưu hóa và chỉnh sửa prompt để tương tác với các mô hình AI hiện đại như **OpenAI GPT-4o** và **Google Gemini 1.5 Flash**. Ứng dụng hỗ trợ markdown, LaTeX, image input và tùy chỉnh nhiều loại ngữ cảnh sử dụng.
 
-📝 Flexible task selection: improve, rewrite, translate, summarize, and more
+---
 
-🌐 Multilingual output: English, Vietnamese, Spanish, French, Japanese, Korean...
+## 🚀 Tính năng nổi bật
 
-📷 Image attachment for vision-enabled models
+- 🧠 Tương thích GPT-4o và Gemini 1.5
+- 📌 Giao diện 3 cột trực quan: Input → Task → Output
+- ✍️ Tùy chọn chi tiết: tone, vai trò, ngành nghề, kênh giao tiếp, ngôn ngữ, độ dài, v.v.
+- 📎 Hỗ trợ đính kèm ảnh (image prompt) để phân tích hoặc mô tả ảnh
+- 🧩 Quản lý biến tùy chỉnh (custom context variables)
+- 💾 Lưu cấu hình người dùng (localStorage)
+- 🔈 Đọc to kết quả đầu ra (text-to-speech)
+- 🌙 Hỗ trợ Dark Mode
+- 📄 Hướng dẫn nhanh và ví dụ prompt mẫu
 
-🧩 Custom variables for better contextual precision
+---
 
-📤 Import/Export JSON configs for user variables
+## 🛠️ Cài đặt & Sử dụng
 
-🌗 Dark mode support
+### 1. Clone hoặc tải project
 
-🔊 Text-to-speech (Read aloud feature)
 
-🧠 MathJax support for LaTeX rendering in AI output
+### 2. Mở file HTML trong trình duyệt
 
-🧪 Live Markdown preview
+```bash
+# Cách 1: Mở trực tiếp trên macOS hoặc Linux
+open Aipromptstudio.html
+```
 
-🚀 Getting Started
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/ai-prompt-studio.git
-2. Open Aipromptstudio.html in your browser
-No server or build step required. This is a pure front-end static web app.
+Hoặc kéo file `Aipromptstudio.html` vào trình duyệt bất kỳ (Chrome, Edge, Firefox, Safari...).
 
-3. Set your API keys
-Edit the file and replace:
+---
 
-js
-Copy
-Edit
+### 3. Thiết lập API Key
+
+Mở file `Aipromptstudio.html` bằng trình soạn thảo mã nguồn (VSCode, Sublime, Notepad++...), và tìm đến đoạn:
+
+```js
 const OPENAI_API_KEY = "INSERT_YOUR_OPENAI_API_HERE";
 const GEMINI_API_KEY = "INSERT_YOUR_GEMINI_API_HERE";
-⚠️ Warning: Do NOT expose real keys in public repositories. Use server-side proxy for production.
+```
 
-📂 File Structure
-bash
-Copy
-Edit
-.
-├── Aipromptstudio.html    # Main app file
-└── README.md              # This file
-🛠 Technologies Used
-Tailwind CSS
+Thay thế bằng khóa API của bạn:
 
-FontAwesome Icons
+- 🔑 OpenAI API Key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+- 🔑 Google Gemini API Key: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
-Marked.js – Markdown parsing
+> ⚠️ **Cảnh báo:** Không commit khóa API lên GitHub công khai. Hãy sử dụng biến môi trường hoặc backend để bảo mật nếu deploy online.
 
-MathJax – LaTeX rendering
+---
 
-Vanilla JS (No framework)
+## 💡 Ví dụ sử dụng
 
-🔐 Security Note
-This project is intended for local or personal usage.
+### 📌 Prompt cải thiện văn phong
 
-For production, implement a secure backend proxy to handle API keys safely.
+- **Input:** `The report is good. I need more time.`
+- **Task:** Improve Text  
+- **Tone:** Professional  
+- **Recipient:** Superior/Manager  
+- **Output:** Một email chuyên nghiệp đề nghị thêm thời gian với tiêu đề và nội dung rõ ràng.
 
-🙌 Credits
-Developed by Minh Do (2025)
+### 🌐 Prompt dịch văn bản
 
-Icons by FontAwesome
+- **Input:** `Hôm nay trời đẹp quá!`  
+- **Task:** Translate Text  
+- **Language:** English  
+- **Output:** `The weather is so beautiful today!`
 
-AI Models via OpenAI and Google Gemini
+---
 
-📄 License
-MIT License (You can modify and use freely with attribution)
+## 📋 Các task được hỗ trợ
+
+- Improve Text
+- Rewrite Text
+- Change Tone
+- Correct Grammar (minimal changes)
+- Summarize
+- Expand on Text/Idea
+- Translate
+- Dictionary
+- English Learning
+- Free Prompt
+
+---
+
+## 📦 Công nghệ sử dụng
+
+- [TailwindCSS](https://cdn.tailwindcss.com)
+- [Font Awesome](https://cdnjs.com)
+- [marked.js](https://cdn.jsdelivr.net/npm/marked)
+- [MathJax](https://cdn.jsdelivr.net/npm/mathjax)
+
+Tất cả được import trực tiếp từ CDN — không cần cài đặt backend hay thư viện ngoài.
+
+---
+
+## 📄 Giấy phép
+
+Phát hành theo [MIT License](LICENSE).
+
+Phát triển bởi **Minh Do - 2025**
+
