@@ -105,6 +105,4 @@ All dependencies are loaded via CDN—no backend or additional installation requ
 ---
 
 ## 📄 License
-
-Released under the [MIT License](LICENSE)  
 Developed by **Minh Do – 2025**
