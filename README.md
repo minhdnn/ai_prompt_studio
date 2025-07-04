@@ -37,7 +37,7 @@ On macOS or Linux:
 open Aipromptstudio.html
 ```
 
-Or simply drag and drop `Aipromptstudio.html` into your preferred browser (Chrome, Firefox, Edge, Safari, etc.).
+Or simply drag and drop `Ai_Prompt_Studio.html` into your preferred browser (Chrome, Firefox, Edge, Safari, etc.).
 
 ---
 
